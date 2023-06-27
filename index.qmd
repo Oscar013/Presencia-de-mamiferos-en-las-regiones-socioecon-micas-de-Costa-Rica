@@ -220,10 +220,10 @@ grafico_mamiferos_region <-
 riqueza_especies_mamiferos |>
   ggplot(aes(x = reorder(region,-riqueza_especies_mamiferos), y = riqueza_especies_mamiferos)) +
   geom_bar(stat = "identity", position = "dodge") +
-  ggtitle("Riqueza de especies de mamiferos en las regiones socioeconomicas de Costa Rica") +
+  ggtitle("Riqueza de especies de mamiferos en las regiones socioeconómicas de Costa Rica") +
   xlab("Region socioeconomicas") +
   ylab("Riqueza de especies")+
-  ggthemes::theme_fivethirtyeight()
+  ggthemes::theme_economist_white()
 
 ggplotly(grafico_mamiferos_region)
 
@@ -251,9 +251,9 @@ mamiferos_union_regiones |>
 desde el año 2000 hasta el 2023.") +
   xlab("Año") +
   ylab("Cantidad de perezosos de tres dedos") +
-  ggthemes::theme_fivethirtyeight()
+  ggthemes::theme_economist_white()
 
 ggplotly(perezosos)
-```
 
+```
 
